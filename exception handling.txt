@@ -1,0 +1,83 @@
+Program:
+
+//File MyException.java
+import java.util.Scanner;
+public class MyException
+
+public static void main(String[] args)
+{
+
+int num1, num2;
+
+int index;
+
+int x{]= {33,5,66};
+
+Scanner sc=new Scanner(System.in);//creating object of scanner class
+
+int n;
+
+do {//menu driven
+
+System.out.printin("\nMenu \n Enter the Choice to check type of error "
+
++"\n1 Arithmaticexception"
++ "\n2 ArrayOutOfBound"
+
++ "\n3 Exit");
+n=sc.nextInt();//taking input from user
+switch(n)
+
+{
+case 1:
+
+try
+{ //try block
+System.out.printin(“Enter Number 1 ::");
+num1=sc.nextInt();// read num1
+System.out.printin("Enter Number 2 ::");
+num2=sc.nextInt();// read num2
+double c=num1/num2;//dividing num1 by num2
+System.out.printin("num1 / num2 = "+c);
+
+catch(Arithmeticexception e)
+System.out.printin(" Divide by zero error");
+catch (Exception e)
+System.out.printin(e);
+
+break;
+case 2:
+try
+{ //try block
+System.out.printin("Enter array index::");
+index = sc.nextInt();
+System.out.printin("x["+index+"]= "+x[index]);
+
+catch(ArrayIndexOutOfBoundsException e)
+
+System.out.printin(" array index out of bounds exception");
+}
+
+catch (Exception e)
+
+System.out.printin("Unknown error");
+System.out.printin(e);
+}
+
+break;
+
+case 3:
+System.out.printin(" Exiting the program");
+System.exit(0);
+
+default:
+//default when case is not found
+System.out.printin("INVALID INPUT !!!");
+
+}while(true);
+
+wee
+
+Conclusion:
+We have studies exception handling concept using java
+
